@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-Screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 30%;
+    gap: 15px;
+    color: #fff;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.login-form>input {
+    text-align-last: center;
+    font-size: 20pt;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.view-cust{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: #5a94f1;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table{
+    width: 95%;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-inline: auto;
+    background-color: bisque;
+}
+
+td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+th{
+    text-align: start;
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.btn{
+    padding: 9px 15px;
+    border: none;
+    background-color: rgb(248, 197, 130);
+    color: #080808;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.del-btn{
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+h1{
+    text-align: center;
+    font-size: 35pt;
+}
+
+.edit-btn{
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.addCustomer-form{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    height: fit-content;
+    gap: 10px;
+    color: black;
+    border: 1px solid black;
+    margin-inline: auto;
+    margin-top: 25px;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: none;
+    background-color: rgb(20, 86, 86);
+}
+.addCustomer-form>div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.addCustomer-form>div>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.addCustomer-form>div>div>input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+}
+
+.addCustomer-form>button{
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(247, 175, 67);
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.editCustomer-form{
+    display: none;
+}
+
+.btn-conntainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 25px;
+    overflow: hidden;
+    font-size: 17pt;
+}
+.btn-conntainer>select{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 13pt;
+
+}

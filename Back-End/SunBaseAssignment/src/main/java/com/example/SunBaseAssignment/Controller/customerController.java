@@ -5,6 +5,7 @@ import com.example.SunBaseAssignment.Dto.Request.customerRequestDto;
 import com.example.SunBaseAssignment.Dto.Response.customerResponseDto;
 import com.example.SunBaseAssignment.Exception.customerAlreadyExists;
 import com.example.SunBaseAssignment.Exception.customerNotFound;
+import com.example.SunBaseAssignment.Service.ApiService;
 import com.example.SunBaseAssignment.Service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -81,5 +82,11 @@ public class customerController {
         }
     }
 
+    ApiService apiService = new ApiService();
+    @GetMapping("/syncDB")
+    public Object[] getToken(){
+        Object[] customers = apiService.getToken();
+        return customers;
+    }
 
 }

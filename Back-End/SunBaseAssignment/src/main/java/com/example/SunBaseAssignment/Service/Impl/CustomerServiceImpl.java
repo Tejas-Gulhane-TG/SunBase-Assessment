@@ -128,11 +128,11 @@ public class CustomerServiceImpl implements CustomerService {
         List<Customer> searchRes = new ArrayList<>();
         if (searchBy.equals("firstName")) {
             searchRes = customerRepository.findByFirstNameLike(searchQuery);
-        } else if (searchBy.equals("city")) {
+        } else if (searchBy.equals("City")) {
             searchRes = customerRepository.findByCityLike(searchQuery);
-        } else if (searchBy.equals("phone")) {
+        } else if (searchBy.equals("Phone")) {
             searchRes = customerRepository.findByPhoneLike(searchQuery);
-        } else if (searchBy.equals("email")) {
+        } else if (searchBy.equals("Email")) {
             searchRes = customerRepository.findByEmailLike(searchQuery);
         }
         List<customerResponseDto> searchList = new ArrayList<>();

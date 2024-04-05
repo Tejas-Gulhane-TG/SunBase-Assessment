@@ -20,7 +20,7 @@ class MyConfig {
         UserDetails userDetails =   User.builder()
                                         .username("TEJAS")
                                         .password(passwordEncoder()
-                                        .encode("abc"))
+                                        .encode("TEJAS"))
                                         .roles("ADMIN").build();
         return new InMemoryUserDetailsManager(userDetails);
     }
